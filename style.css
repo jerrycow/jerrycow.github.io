@@ -1,3 +1,8 @@
+@font-face{
+	font-family: 'banana';
+	src: url(banana.EOF);
+}
+
 html, body{
 	margin: 0;
 }
@@ -6,8 +11,85 @@ html, body{
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 300px;
+	height: 500px;
 	background-image: url(g.swan.jpg);
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+}
+
+#logo {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: "banana";
+    left: 50px;
+    padding: 0 80px;
+    position: absolute;
+    top: 30px;
+}
+
+#section-2{
+	position: relative;
+	float: right;
+	width: 100%;
+	background: #ddd;
+	height: 1000px;
+}
+
+.button{
+	padding: 8px 15px;
+	background: #38f;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 8px;
+	font-size: 22px;
+	width: 60px;
+	text-align: center;
+	font-family: arial, sans-serif;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+}
+
+.button:hover{
+	background: #3af;
+}
+
+#popup{
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 100;
+	background: blue;
+	width: 300px;
+	height: 300px;
+}
+
+.close-button{
+	padding: 8px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff;
+	background: #ddd;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+
+
+
+
+/*======= MEDIA QUERIES =======*/
+@media all and (max-width: 500px){
+	#logo{
+		background-image: none;
+		background-color: red;
+	}
 }
