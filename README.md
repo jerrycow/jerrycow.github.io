@@ -1,2 +1,0 @@
-jerrycow.github.io
-==================
